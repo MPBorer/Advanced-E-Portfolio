@@ -63,14 +63,16 @@ button{
        height: 3px;
        width: 0;
        right: 0;
+     
        transition: 300ms ease;
 }
 .link__hover-effect--white:after{
-       color: white;
+      background-color: white;
 }
 .link__hover-effect--black:after{
-    color: black;
-}
+    background-color: black;
+} 
+   
 .link__hover-effect:hover:after{
        left: 0;
        width: 100%;
@@ -206,6 +208,7 @@ Projects
 }
 .project__img{
     width: 100%;
+    transition: all 300ms ease;
 }
 .project__wrapper{
     position: relative;
