@@ -44,6 +44,11 @@ a{
 button{
     cursor: pointer;
 }
+input, textarea{
+    width: 100%;
+}
+
+
 .click{
     transition: all 300ms ease;
 }
