@@ -121,7 +121,31 @@ nav,
     visibility: hidden;
     transition: all 400ms;
 }
-
+.dark-theme .title,
+.dark-theme .section__title,
+.dark-theme .section__sub-title,
+.dark-theme .nav__link--anchor,
+.dark-theme .fa-solid,
+.dark-theme .header__para{
+   color: white;
+}
+.dark-theme section{
+    background-color: #242424;
+}
+.dark-theme #personal-logo{
+    filter: invert(0);
+}
+.dark-theme .scroll__icon{
+    border-color: #fff;
+}
+.dark-theme .scroll__icon:after{
+    background-color: #fff;
+}
+.dark-theme .mail__btn{
+    background-color: white;
+    color: #242424;
+   
+}
 /* 
       LANDING PAGE
 */
