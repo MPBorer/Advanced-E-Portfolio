@@ -1,4 +1,6 @@
-
+//
+//
+//
 
 function contact(event) {
     event.preventDefault();
@@ -20,4 +22,14 @@ function contact(event) {
             "The Email service is temporarily unavailable.  Please contact me directly @ MPBorer@gmail.com"
         )
     })
+}
+
+let isModalOpen = false;
+function toggleModal () {
+    if (isModalOpen) {
+        isModalOpen = false
+        return document.body.classList.remove("modal--open")
+    }
+    isModalOpen = true;
+    document.body.classList += "modal--open";
 }
