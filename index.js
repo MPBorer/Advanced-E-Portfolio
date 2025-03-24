@@ -1,6 +1,17 @@
 let isModalOpen = false;
 let contrastToggle = false 
 //
+function moveBackground(event){
+    const shapes = document.querySelectorAll(".shape");
+    const x = event.clientx;
+    const y = event.clienty;
+    
+    for (let i = 0; i < shapes.length; ++i){
+        shapes[i].style.transform = `translate(${x}px, ${y}px)`
+    }
+}
+
+
 
 function toggleContrast(){
     contrastToggle = !contrastToggle;
@@ -11,6 +22,8 @@ function toggleContrast(){
         document.body.classList.remove("dark-theme")
     }
 }
+
+
 
 function contact(event) {
     event.preventDefault();
@@ -33,6 +46,7 @@ function contact(event) {
         )
     })
 }
+
 
 
 function toggleModal () {
