@@ -25,7 +25,7 @@
                 <img id="personal-logo" src="./assets/Michael Borer2.png" alt="">
             </figure>
             <ul class="nav__link--list">
-                <li class="nav__links">
+                <li class="nav__links" onclick="toggleModal()">
                     <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
@@ -39,7 +39,7 @@
                     link__hover-effect--black
                     ">Projects</a>
                 </li>
-                <li class="nav__links">
+                <li class="nav__links" onclick="toggleModal()">
                     <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
@@ -61,7 +61,7 @@
                   <h1 class="title title--secondary">I'm Michael</h1>
                   <p class="header__para">I'm , a <b><span class="green">Frontend Simplified Student</span></b> with a  
                 desire to learn a new trade and become successfull in a new career.
-                <br> Here's more <b><span class="green">about me.</span><b></p>
+                <br> Here's more <b><span class="green click" onclick="toggleModal()">about me.</span><b></p>
                  <div class="social__list">
                     <a href="https://github.com/MPBorer" target="_blank" class="social__link click">
                         <i class="fa-brands fa-github"></i>
@@ -110,7 +110,7 @@
                    </div>
                   
                    <div class="modal__half modal__contact">
-                    
+                    <i class="fa-solid fa-xmark modal__exit click" onclick="toggleModal()"></i>
                     <h3 class="modal__title modal__title--contact">Lets Connect!</h3>
                     <h4 class="modal__sub-title modal__sub-title--about">I am exporing new oportunities</h4>
                     <form id="contact__form" onsubmit="contact(event)">
@@ -135,7 +135,7 @@
                         Thank you for reaching out. I look forward to speaking with you soon!
                     </div>
                 </div>
-                <i class="fa-solid fa-xmark modal__exit click"></i>
+              
                </div>
     </section>
     <section id="projects">
